@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Engine\" />
+    <Folder Include="Managers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TodoBusinessLayer.DataContract\TodoBusinessLayer.DataContract.csproj" />
+    <ProjectReference Include="..\TodoData.DataContract\TodoData.DataContract.csproj" />
+    <ProjectReference Include="..\TodoWebApi.DataContract\TodoWebApi.DataContract.csproj" />
+  </ItemGroup>
 </Project>

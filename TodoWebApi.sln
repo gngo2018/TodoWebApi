@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoWebApi", "TodoWebApi\TodoWebApi.csproj", "{547E4A04-95E0-408E-81D7-A3A192680419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoWebApi.DataContract", "TodoWebApi.DataContract\TodoWebApi.DataContract.csproj", "{00594E94-BF3A-4AB5-AC7E-96E0F35FCF62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBusinessLayer", "TodoBusinessLayer\TodoBusinessLayer.csproj", "{0932A26F-712C-4110-B874-B0D185127E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBusinessLayer.DataContract", "TodoBusinessLayer.DataContract\TodoBusinessLayer.DataContract.csproj", "{026FC266-43D5-49B5-8A48-FDB76E34AB28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoData", "TodoData\TodoData.csproj", "{180A25E5-6DC0-43F0-AA4A-9B7FA09B25E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoData.DataContract", "TodoData.DataContract\TodoData.DataContract.csproj", "{62D47B3B-88FD-4AD4-899E-D52F9C9D5DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +23,25 @@ Global
 		{547E4A04-95E0-408E-81D7-A3A192680419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{547E4A04-95E0-408E-81D7-A3A192680419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{547E4A04-95E0-408E-81D7-A3A192680419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00594E94-BF3A-4AB5-AC7E-96E0F35FCF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00594E94-BF3A-4AB5-AC7E-96E0F35FCF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00594E94-BF3A-4AB5-AC7E-96E0F35FCF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00594E94-BF3A-4AB5-AC7E-96E0F35FCF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0932A26F-712C-4110-B874-B0D185127E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0932A26F-712C-4110-B874-B0D185127E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0932A26F-712C-4110-B874-B0D185127E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0932A26F-712C-4110-B874-B0D185127E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026FC266-43D5-49B5-8A48-FDB76E34AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026FC266-43D5-49B5-8A48-FDB76E34AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026FC266-43D5-49B5-8A48-FDB76E34AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026FC266-43D5-49B5-8A48-FDB76E34AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180A25E5-6DC0-43F0-AA4A-9B7FA09B25E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180A25E5-6DC0-43F0-AA4A-9B7FA09B25E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180A25E5-6DC0-43F0-AA4A-9B7FA09B25E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180A25E5-6DC0-43F0-AA4A-9B7FA09B25E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D47B3B-88FD-4AD4-899E-D52F9C9D5DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D47B3B-88FD-4AD4-899E-D52F9C9D5DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D47B3B-88FD-4AD4-899E-D52F9C9D5DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D47B3B-88FD-4AD4-899E-D52F9C9D5DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
