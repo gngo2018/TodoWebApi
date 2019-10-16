@@ -9,7 +9,7 @@ namespace TodoWebApi.DataContract.Todo
         Task<bool> CreateTodo(TodoCreateRAO rao);
         Task<IEnumerable<TodoGetListItemRAO>> GetTodos();
         Task<TodoGetListItemRAO> GetTodoById(int id);
-        Task<bool> UpdateTodo(TodoUpdateRao rao);
+        Task<bool> UpdateTodo(TodoUpdateRAO rao);
         Task<bool> DeleteTodo(int id);
     }
 }

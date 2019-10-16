@@ -15,6 +15,9 @@ namespace TodoData.DataModelConfig
                 .HasColumnType("TIMESTAMP(0)")
                 .IsRequired();
 
+            builder.Property(prop => prop.UpdatedOn)
+                .HasColumnType("TIMESTAMP(0)");
+
             builder.Property(prop => prop.Body)
                 .HasMaxLength(1000);
 

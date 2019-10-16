@@ -19,6 +19,11 @@ namespace TodoWebApi.MappingProfiles
             CreateMap<TodoDataModel, TodoGetListItemRAO>();
             CreateMap<TodoGetListItemRAO, TodoGetListItemDTO>();
             CreateMap<TodoGetListItemDTO, TodoGetListItemResponse>();
+
+            //Put Mapping
+            CreateMap<TodoUpdateRequest, TodoUpdateDTO>();
+            CreateMap<TodoUpdateDTO, TodoUpdateRAO>();
+            CreateMap<TodoUpdateRAO, TodoDataModel>();
         }
     }
 }

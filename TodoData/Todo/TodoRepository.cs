@@ -46,9 +46,16 @@ namespace TodoData.Todo
             return rao;
         }
 
-        public Task<bool> UpdateTodo(TodoUpdateRao rao)
+        public async Task<bool> UpdateTodo(TodoUpdateRAO rao)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Todo.SingleOrDefaultAsync(e => e.TodoId == rao.TodoId);
+
+            entity.Title = rao.Title;
+            entity.Body = rao.Body;
+            entity.IsCompleted = rao.IsCompleted;
+            entity.UpdatedOn = rao.UpdatedOn;
+
+            return await _context.SaveChangesAsync() == 1;
         }
 
         public Task<bool> DeleteTodo(int id)

@@ -75,5 +75,22 @@ namespace TodoWebApi.Controllers
 
             return Ok(response);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateTodo(TodoUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return StatusCode(400);
+            }
+
+            var dto = _mapper.Map<TodoUpdateDTO>(request);
+            dto.UpdatedOn = DateTime.Now;
+
+            if (await _manager.UpdateTodo(dto))
+                return StatusCode(202);
+
+            throw new Exception();
+        }
     }
 }

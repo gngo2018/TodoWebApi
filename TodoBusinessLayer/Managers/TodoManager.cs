@@ -44,8 +44,13 @@ namespace TodoBusinessLayer.Managers
             return dto;
         }
 
-        public Task<bool> UpdateTodo(TodoUpdateDTO dto)
+        public async Task<bool> UpdateTodo(TodoUpdateDTO dto)
         {
+            var rao = _mapper.Map<TodoUpdateRAO>(dto);
+            if (await _repository.UpdateTodo(rao))
+                return true;
+
+
             throw new NotImplementedException();
         }
 
